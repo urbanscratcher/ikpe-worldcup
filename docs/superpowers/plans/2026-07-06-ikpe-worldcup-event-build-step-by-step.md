@@ -1,5 +1,7 @@
 # Ikpe Worldcup Event Build Implementation Plan
 
+> **Updated execution order:** Prefer `docs/superpowers/plans/2026-07-07-ikpe-worldcup-visual-first-implementation.md` for the actual build sequence. This document remains useful as a deeper implementation backlog, but the visual-first plan should drive day-to-day work.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build the real event-day mobile web app for 익페 랩월드컵 with entrance-code identity, participant registration, cue-sheet links, admin event control, voting, host view, and sound view.
@@ -1462,4 +1464,3 @@ Known deferred items:
 - Supabase Realtime is optional after polling is stable.
 - Full automatic tournament progression is out of scope.
 - Complex RLS is deferred because API route authorization is the primary event-build boundary.
-
