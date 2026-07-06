@@ -19,8 +19,9 @@
     }
   },
   "devDependencies": {
+    "oxc": "^1.0.1",
+    "oxlint": "^1.72.0",
     "turbo": "^2.10.3",
     "typescript": "^5.9.2"
   }
 }
-
