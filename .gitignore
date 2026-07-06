@@ -1,0 +1,25 @@
+# Dependencies
+node_modules
+.pnpm-store
+.pnp
+.pnp.js
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Build outputs
+dist
+build
+.turbo
+.wrangler
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS/editor
+.DS_Store
+

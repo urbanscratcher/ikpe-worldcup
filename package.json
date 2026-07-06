@@ -1,15 +1,16 @@
 {
   "name": "ikpe-worldcup",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "private": true,
+  "type": "module",
   "packageManager": "pnpm@11.7.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "typecheck": "turbo run typecheck",
+    "lint": "oxlint .",
+    "format": "oxc format --write .",
+    "check": "pnpm typecheck && pnpm lint"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -17,8 +18,9 @@
       "onFail": "download"
     }
   },
-  "type": "module",
   "devDependencies": {
-    "turbo": "^2.10.3"
+    "turbo": "^2.10.3",
+    "typescript": "^5.9.2"
   }
 }
+
