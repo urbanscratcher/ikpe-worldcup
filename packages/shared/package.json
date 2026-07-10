@@ -3,12 +3,15 @@
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./schemas/enter": "./src/schemas/enter.ts"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {},
+  "dependencies": {
+    "valibot": "^1.1.0"
+  },
   "devDependencies": {
     "typescript": "^5.9.2"
   }

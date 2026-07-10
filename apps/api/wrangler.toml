@@ -1,0 +1,6 @@
+name = "ikpe-worldcup-api"
+main = "src/index.ts"
+compatibility_date = "2026-07-09"
+
+[vars]
+APP_ENV = "local"

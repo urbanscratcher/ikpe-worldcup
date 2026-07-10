@@ -1,0 +1,20 @@
+{
+  "name": "@ikpe-worldcup/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "WRANGLER_WRITE_LOGS=false wrangler dev src/index.ts --local --port 8787",
+    "build": "WRANGLER_WRITE_LOGS=false wrangler deploy --dry-run --outdir dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ikpe-worldcup/shared": "workspace:*",
+    "hono": "^4.8.0",
+    "valibot": "^1.1.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250706.0",
+    "typescript": "^5.9.2",
+    "wrangler": "^4.24.0"
+  }
+}
